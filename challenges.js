@@ -44,13 +44,13 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
     // Create two random numbers for the dices
     var dice1 = Math.floor(Math.random() * 6) + 1;
-    // var dice2 = Math.floor(Math.random() * 6) + 1;
+   
 
     // Display the results
     document.getElementById('dice1').style.display = 'block';
-    // document.getElementById('dice2').style.display = 'block';
+    
     document.getElementById('dice1').src = 'dice-' + dice1 + '.png';
-    // document.getElementById('dice2').src = 'dice-' + dice2 + '.png';
+  
     
     // Checking if the player rolls a 6 two times in a row
     if(dice1 === 6 && prevDiceRoll === 6) {
@@ -106,7 +106,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 
       // Hiding the dices
       document.getElementById('dice1').style.display = 'none';
-      // document.getElementById('dice2').style.display = 'none';
+     
 
       // Adding the 'winner' class to the player
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -144,7 +144,7 @@ function init() {
 
   // Hiding the dices right from the beggining of the game
   document.getElementById('dice1').style.display = 'none';
-  // document.getElementById('dice2').style.display = 'none';
+
 
   // Setting the scores to 0 by default (using the 'getElementById' method)
   document.getElementById('score-0').textContent = '0';
@@ -187,6 +187,6 @@ function nextPlayer() {
 
   // Hiding the dice after the active player changes 
   document.getElementById('dice1').style.display = 'none';
-  // document.getElementById('dice2').style.display = 'none';
+  
 
 }
